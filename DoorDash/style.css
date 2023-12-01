@@ -1,0 +1,370 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: NotoSansPahawhHmong;
+    src: url(../Fonts/NotoSansPahawhHmong-Regular.ttf);
+}
+
+
+.firstrow{
+    background-size :cover;
+    height: 550px;
+    padding: 0px 8px;
+    background-image: url('https://img.cdn4dd.com/cdn-cgi/image/fit=cover,format=auto,quality=60/https://cdn.doordash.com/managed/consumer/seo/home/hero_v3/hero_desktop.png');
+    height: 550px;
+    width: 100%;
+    
+    background-position: center center;
+}
+
+
+nav{
+    display: flex;
+    justify-content: space-around; 
+}
+
+.logo{
+    display: flex;
+    width: 50%;
+    justify-content: right;
+}
+
+.logo h3{
+    top:1%;
+    left:45%;
+    position: absolute;
+    color: white;
+    font-weight: 900;
+    font-family: NotoSansPahawhHmong;
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+
+.buttons{
+    display: flex;
+    width: 50%;
+    justify-content: flex-end;
+    margin-right: 20px;
+}
+
+.buttons button:nth-child(1){
+    font-weight: 800;
+    margin-top: 10px;
+    letter-spacing: -0.04ch;
+    height: 40px;
+    color: rgb(255, 255, 255);
+    border:none;
+    padding: 0px 15px;
+    margin-right: 5px;
+    background-color: rgb(217, 20, 0);
+    border-radius: 20px;
+}
+
+.buttons button:nth-child(2){
+    font-weight: 800;
+    margin-top: 10px;
+    letter-spacing: -0.04ch;
+    height: 40px;
+    color:  black;
+    border:none;
+    padding: 0px 15px;
+ 
+    background-color:white;
+    border-radius: 20px;
+}
+
+.deliveryAddress{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    width: 80%;
+    text-align: center;
+    margin: auto;
+    align-items: center;
+}
+
+.deliveryAddress h2{
+    padding-top: 50px;
+    color: white;
+    font-family: NotoSansPahawhHmong;
+    font-size: 35px;
+    font-weight: 800;
+}
+
+.deliveryAddress input{
+    
+    border-radius: 25px;
+    display: block;
+    margin: auto;
+    margin-top: 10px;
+    border: none;
+   
+}
+
+::placeholder{
+    font-size: medium;
+}
+
+.deliveryAddress input:nth-child(1){
+    font-family: NotoSansPahawhHmong;
+    padding: 15px 75px;
+    
+}
+
+.deliveryAddress input:nth-child(2){
+    font-family: NotoSansPahawhHmong;
+    padding: 10px 20px;
+    font-size: 13px;
+    font-weight: 800;
+    
+}
+
+
+
+.locationLogo{
+    position: absolute;
+    top:42%;
+    left:37%;
+}
+
+.partner{
+    padding-top:100px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: space-between;
+    width:80%;
+    margin: auto;
+    text-align: center;
+    
+}
+
+.partnerCard{
+    border: none;
+}
+
+.partner img{
+    height: 150px;
+    width:100%;
+    object-fit: fill;
+
+}
+.partner div{
+    margin: auto;
+}
+.partner h3,p,a{
+    font-family: NotoSansPahawhHmong;
+}
+
+.partner h3{
+    font-size: 28px;
+    font-weight: 900;
+}
+
+.partner p{ 
+    font-weight: 600;
+}
+
+.partner a{
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 700;
+    color: rgb(235, 23, 0);
+}
+
+
+.secondRow{
+    
+    width:80%;
+    margin: 75px auto;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 1fr 1.2fr;
+  
+}
+
+.secondRow img{
+    width: 100%;
+    object-fit: cover;
+}
+
+.secondRow button{
+    font-weight: 800;
+    margin-top: 10px;
+    letter-spacing: -0.04ch;
+    height: 40px;
+    color: rgb(255, 255, 255);
+    border:none;
+    padding: 0px 15px;
+    margin-right: 5px;
+    background-color: rgb(217, 20, 0);
+    border-radius: 20px;
+}
+
+.secondRow div:nth-child(1) {
+    display: flex;
+    flex-direction: column;
+   justify-content:  center;
+}
+
+.thirdRow{
+
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 1.2fr 1fr;
+    width: 80%;
+    margin: auto;
+
+}
+
+.thirdRow img{
+    width: 100%;
+    object-fit: cover;
+}
+
+.thirdRow div:nth-child(2){
+    margin: auto;
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+   justify-content:  center;
+}
+
+.thirdRow button{
+    font-weight: 800;
+    margin-top: 10px;
+    letter-spacing: -0.04ch;
+    height: 40px;
+    color: rgb(255, 255, 255);
+    border:none;
+    padding: 0px 15px;
+    margin-right: 5px;
+    background-color: rgb(217, 20, 0);
+    border-radius: 20px;
+}
+
+
+/* .banner{
+    width: 100%;
+    background-color: rgb(254, 241, 238);
+    height: 650px;
+    z-index: -999;
+    position: absolute;
+    top:1500px;
+
+}
+
+
+
+
+@media screen and (max-width:1270){
+
+    .banner{
+        background-color: white;
+    }
+
+} */
+
+
+@media screen and (max-width:770px) {
+    .logo h3{
+        font-size: small;
+        top:150px;
+        left:39%;
+        position: absolute;
+        color: white;
+        font-family: NotoSansPahawhHmong;
+        font-size: 20px;
+        letter-spacing: 1px;
+    }
+
+    .deliveryAddress h2{
+        padding-top: 50px;
+        color: white;
+        font-family: NotoSansPahawhHmong;
+        font-size: 23px;
+    }
+
+    .deliveryAddress input:nth-child(2){
+
+        font-family: NotoSansPahawhHmong;
+        padding: 10px 20px;
+        font-size: 13px;
+        font-weight: 800;
+        content: "Sign In";
+        
+    }
+
+    .secondRow{
+    
+        width:80%;
+        margin: 75px auto;
+        display: grid;
+        justify-content: center;
+        grid-template-columns: 1fr;
+        position: relative;
+        top:200px
+    
+    }
+
+
+    .secondRow img{
+
+       
+        height: 150px;
+        width: 100%;
+        object-fit: cover;
+        position: relative;
+        top: -400px;
+    }
+
+    .thirdRow {
+
+        grid-template-columns:  1fr;
+
+    }
+
+    .thirdRow img{
+        height: 150px;
+    }
+
+    .thirdRow div:nth-child(2){
+       
+        padding-left: 0;
+    }
+
+    
+
+
+
+}
+
+@media screen and (max-width:1270px) {
+
+    .partner{
+        padding-top:100px;
+        display: grid;
+        grid-template-columns: 1fr ;
+        justify-content: center;
+        text-align: center;
+        
+    }
+
+    .partner div{
+       display: grid;
+       grid-template-columns: 1fr ;
+       justify-content: center;
+      width: 10rem;
+      margin-top: 30px;
+     
+      
+    } 
+
+    
+
+    
+}
