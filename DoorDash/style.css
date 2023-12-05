@@ -344,7 +344,7 @@ p {
   object-fit: cover;
 }
 
-.sixthRow h1{
+.sixthRow h2{
   font-family:NotoSansPahawhHmong ;
   font-weight: 800;
 }
@@ -389,6 +389,11 @@ p {
 .seventhRow h2{
   font-weight: 800;
 }
+
+.seventhRow p{
+  font-family: 50;
+  font-size: smaller;
+ }
 
 .seventhRow div:nth-child(1) {
   display: flex;
@@ -457,8 +462,96 @@ p {
   justify-content: center;
   padding-left: 10px;
 }
+ .eighthRow p{
+  font-family: 50;
+  font-size: smaller;
+ }
+
+.footer{
+  background-color: black;
+  padding-top: 20px;
+  margin-top: 20px;
+
+}
 
 
+.footer a{
+  text-decoration: none;
+  color: rgb(196, 196, 196);
+  display: block;
+  font-family: NotoSansPahawhHmong;
+  font-size: smaller;
+}
+.firstFoot{
+  width: 80%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  
+}
+
+.footer p{
+  font-family: 50;
+  font-family: NotoSansPahawhHmong;
+  font-size: 13px;
+}
+
+
+
+.col1{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: space-between;
+}
+
+.col2{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: space-around;
+}
+
+.secondFoot{
+  padding-top: 20px;
+  width: 80%;
+  margin: auto;
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  justify-content: center;
+}
+
+.thirdFoot{
+  width:80%;
+  margin: 20px auto;
+  display: grid;
+  grid-template-columns:1fr 1fr  ;
+
+}
+
+.thirdFootOne{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 10px;
+  
+}
+
+.thirdFootTwo{
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.thirdFootTwo div{
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px;
+
+}
+
+svg{
+  background-color: rgb(68, 65, 65);
+  border-radius: 10px;
+}
 
 
 
@@ -504,7 +597,7 @@ p {
     width: 100%;
     object-fit: cover;
     position: relative;
-    top: -400px;
+    top: -350px;
   }
 
   .thirdRow {
@@ -597,6 +690,27 @@ p {
   .eighthRow img{
     height: 175px;
   }
+
+  .col1{
+    grid-template-columns: 1fr;
+    
+  }
+
+  .col2{
+    grid-template-columns: 1fr;
+  
+    height: 100px;
+  }
+
+  .firstFoot{
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .secondFoot{
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
   
 }
 
@@ -621,4 +735,18 @@ p {
     width: 10rem;
     margin-top: 30px;
   }
+}
+
+
+@media screen and (max-width:959px){
+  .firstFoot{
+    grid-template-columns: 1fr;
+  }
+  .col1{
+    margin-bottom: 50px;
+  }
+  .col1 div{
+    margin-bottom: 50px;
+  }
+ 
 }
