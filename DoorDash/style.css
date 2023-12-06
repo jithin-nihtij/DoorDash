@@ -6,7 +6,7 @@ body {
 
 @font-face {
   font-family: NotoSansPahawhHmong;
-  src: url(../Fonts/NotoSansPahawhHmong-Regular.ttf);
+  src: url(Fonts/NotoSansPahawhHmong-Regular.ttf);
 }
 
 .firstrow {
@@ -554,15 +554,16 @@ svg:hover{
     font-weight: 500;
     margin-top: 10px;
     font-size: 12px;
-    padding: 0px 25px;
+    padding: 0px 10px;
    
+    
  
   }
   
   .buttons button:nth-child(2) {
     font-weight: 500;
     font-size: 12px;
-    padding: 0px 25px;
+    padding: 0px 10px;
     background-color: white;
    
   }
@@ -645,21 +646,24 @@ svg:hover{
   }
 
   .secondRow {
-    width: 80%;
+    /* width: 80%;
     margin: 75px auto;
     display: grid;
     justify-content: center;
     grid-template-columns: 1fr;
     position: relative;
-    top: 200px;
+    top: 200px; */
+    grid-template-columns: 1fr;
+    grid-auto-flow: initial; 
+    display: flex;
+    flex-direction: column-reverse;
   }
 
   .secondRow img {
     height: 150px;
     width: 100%;
     object-fit: cover;
-    position: relative;
-    top: -350px;
+  
   }
 
   .thirdRow {
