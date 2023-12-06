@@ -158,10 +158,7 @@ a {
   font-weight: 900;
 }
 
-/* .partner p {
-  font-weight: 600;
-  color: black;
-} */
+
 
 .partner a {
   text-decoration: none;
@@ -244,14 +241,11 @@ a {
 }
 
 .fourthRow img {
-  /* background-image: url("https://img.cdn4dd.com/cdn-cgi/image/fit=cover,format=auto,quality=60/https://cdn.doordash.com/managed/consumer/seo/home/landing_cta/grocery_desktop.png"); */
   filter: brightness(50%);
   height: 500px;
   width: 100%;
   object-fit: cover;
-  /* background-size: cover;
-  background-position: center;
-  */
+  
 }
 
 .fourthRowcontent {
@@ -329,45 +323,6 @@ p {
 
 }
 
-.sixthRow{
-  width: 70%;
-  margin: auto;
-  display: grid;
-  grid-gap: 35px;
-  justify-content: center;
-  grid-template-columns: 1fr 1fr;
-  text-align: center;
-}
-
-.sixthRow img{
-  width: 100%;
-  object-fit: cover;
-}
-
-.sixthRow h2{
-  font-family:NotoSansPahawhHmong ;
-  font-weight: 800;
-}
-
-.sixthRow p{
-  color: black;
-  font-family: NotoSansPahawhHmong;
-  font-weight: 100;
-  font-size: small;
-}
-
-.sixthRow button{
-  font-weight: 800;
-  margin-top: 10px;
-  letter-spacing: -0.04ch;
-  height: 40px;
-  color: rgb(255, 255, 255);
-  border: none;
-  padding: 0px 15px;
-  margin-right: 5px;
-  background-color: rgb(217, 20, 0);
-  border-radius: 20px;
-}
 
 .unlocking h1{
   margin-top: 50px;
@@ -618,7 +573,49 @@ svg:hover{
   }
 }
 
+@media screen and (min-width:770px){
+  .sixthRow{
+    display: grid;
+    width:80%;
+    margin: auto;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+    text-align: center;
+    background-color: rgb(254, 241, 238);
+  }
 
+  .sixthRow img{
+    width:100%;
+    object-fit: cover;
+  }
+
+  .sixthRow h2{
+    font-family:NotoSansPahawhHmong ;
+    font-weight: 800;
+  
+  }
+  
+  .sixthRow p{
+    color: black;
+    font-family: NotoSansPahawhHmong;
+    font-weight: 100;
+    font-size: small;
+   
+  }
+  
+  .sixthRow button{
+    font-weight: 800;
+    margin-top: 10px;
+    letter-spacing: -0.04ch;
+    height: 40px;
+    color: rgb(255, 255, 255);
+    border: none;
+    padding: 0px 15px;
+    margin-right: 5px;
+    background-color: rgb(217, 20, 0);
+    border-radius: 20px;
+  }
+}
 
 @media screen and (max-width: 770px) {
   .logo h3 {
@@ -705,29 +702,61 @@ svg:hover{
     font-size: 13px;
   }
 
+ 
+
+  .sixthRow::-webkit-scrollbar{
+    width: 0;
+  }
+
+
+
   .sixthRow {
-   grid-template-columns: 1fr;
-   
+    max-height: 350px;
+    margin: auto;
+    display: flex;
+    overflow-x: auto;
+    width: 80%;
+    text-align: center;
+    
   }
 
   .sixthRow img{
-    height: 150px;
+    object-fit: cover;
+    width: 100%;
+    height: 145px;
   }
 
- 
-
-  .sixthRow div:nth-child(2){
-    display: none;
+  .sixthRowItem{
+    min-height: 140px;
+    min-width: 98%;
   }
 
-  .sixthRow div:nth-child(3){
-    display: none;
+  .sixthRow h2{
+    font-family:NotoSansPahawhHmong ;
+    font-weight: 800;
+  
   }
-
-  .sixthRow div:nth-child(4){
-    display: none;
+  
+  .sixthRow p{
+    color: black;
+    font-family: NotoSansPahawhHmong;
+    font-weight: 100;
+    font-size: small;
+   
   }
-
+  
+  .sixthRow button{
+    font-weight: 800;
+    margin-top: 10px;
+    letter-spacing: -0.04ch;
+    height: 40px;
+    color: rgb(255, 255, 255);
+    border: none;
+    padding: 0px 15px;
+    margin-right: 5px;
+    background-color: rgb(217, 20, 0);
+    border-radius: 20px;
+  }
  
   .seventhRow{
   
