@@ -21,20 +21,17 @@ body {
 }
 
 nav {
-  display: flex;
-  justify-content: space-around;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
 }
 
-.logo {
-  display: flex;
-  width: 50%;
-  justify-content: right;
+.logo{
+  padding-top: 20px;
 }
 
 .logo h3 {
-  top: 1%;
-  left: 45%;
-  position: absolute;
+  
+  text-align: center;
   color: white;
   font-weight: 900;
   font-family: NotoSansPahawhHmong;
@@ -44,7 +41,7 @@ nav {
 
 .buttons {
   display: flex;
-  width: 50%;
+ 
   justify-content: flex-end;
   margin-right: 20px;
 }
@@ -70,7 +67,6 @@ nav {
   color: black;
   border: none;
   padding: 0px 15px;
-
   background-color: white;
   border-radius: 20px;
 }
@@ -554,7 +550,7 @@ svg:hover{
     font-weight: 500;
     margin-top: 10px;
     font-size: 12px;
-    padding: 0px 10px;
+    padding: 0px 8px;
    
     
  
@@ -563,7 +559,7 @@ svg:hover{
   .buttons button:nth-child(2) {
     font-weight: 500;
     font-size: 12px;
-    padding: 0px 10px;
+    padding: 0px 8px;
     background-color: white;
    
   }
@@ -572,6 +568,20 @@ svg:hover{
     padding: 0px 5px;
     margin:0 10px
   }
+
+  .deliveryAddress input:nth-child(1) {
+    font-family: NotoSansPahawhHmong;
+    padding: 12px 45px;
+  }
+
+  .deliveryAddress input:nth-child(2) {
+    font-family: NotoSansPahawhHmong;
+    padding: 8px 18px;
+    font-size: 10px;
+    font-weight: 500;
+    
+  }
+  
 }
 
 @media screen and (min-width:770px){
@@ -616,18 +626,35 @@ svg:hover{
     background-color: rgb(217, 20, 0);
     border-radius: 20px;
   }
+
+ 
 }
 
 @media screen and (max-width: 770px) {
-  .logo h3 {
-    font-size: small;
-    top: 150px;
-    left: 38%;
+
+  .logo{
     position: absolute;
-    color: white;
-    font-family: NotoSansPahawhHmong;
-    font-size: 20px;
-    letter-spacing: 1px;
+    left: 50%;
+    top: 18%;
+    transform: translate(-50%, -50%);    
+  }
+
+  .buttons button:nth-child(1) {
+    font-weight: 600;
+    padding: 0px 10px;
+    background-color: rgb(217, 20, 0);
+   
+  }
+  
+  .buttons button:nth-child(2) {
+    font-weight: 600;
+    margin-top: 10px;
+    padding: 0px 10px;
+  }
+
+  nav{
+    display: flex;
+    justify-content: right;
   }
 
   .deliveryAddress h2 {
@@ -646,13 +673,6 @@ svg:hover{
   }
 
   .secondRow {
-    /* width: 80%;
-    margin: 75px auto;
-    display: grid;
-    justify-content: center;
-    grid-template-columns: 1fr;
-    position: relative;
-    top: 200px; */
     grid-template-columns: 1fr;
     grid-auto-flow: initial; 
     display: flex;
@@ -715,7 +735,7 @@ svg:hover{
 
 
   .sixthRow {
-    max-height: 350px;
+    max-height: 450px;
     margin: auto;
     display: flex;
     overflow-x: auto;
@@ -727,11 +747,11 @@ svg:hover{
   .sixthRow img{
     object-fit: cover;
     width: 100%;
-    height: 145px;
+    height: 150px;
   }
 
   .sixthRowItem{
-    min-height: 140px;
+    min-height: 40px;
     min-width: 98%;
   }
 
@@ -764,21 +784,17 @@ svg:hover{
  
   .seventhRow{
   
-    width: 80%;
-    margin: 75px auto;
-    display: grid;
-    justify-content: center;
     grid-template-columns: 1fr;
-    position: relative;
-    top: 200px;
+    grid-auto-flow: initial ;
+    display: flex;
+    flex-direction: column-reverse;
   }
 
   .seventhRow img {
     height: 175px;
     width: 100%;
     object-fit: cover;
-    position: relative;
-    top: -350px;
+    
   }
 
   .eighthRow{
